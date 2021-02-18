@@ -3,7 +3,7 @@ body, html {
 }
 
 .hero-image {
-  background-image:url("file:///Users/justinchoi/Developer/justinchoiwebdesign.com/public_html/aau/wnm608/choi.justin/recipes/images/background.jpg");
+  background-image:url("file:///justinchoiwebdesign.com/aau/wnm608/choi.justin/recipes/images/background.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
