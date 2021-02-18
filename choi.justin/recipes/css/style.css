@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+  background-image:url("file:///Users/justinchoi/Developer/justinchoiwebdesign.com/public_html/aau/wnm608/choi.justin/recipes/images/background.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}#wrapper{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#main{width:900px;
+}
+#slideshow-frame{
+	width:350px;
+	height:350px;
+	position: relative;
+	overflow: hidden;
+	border:2px solid #ffae00;
+}
+.arrow-next{
+	background-repeat: :no-repeat;
+	background-image: url(../images/next.png)
+	width:100px;
+	height:50px;
+	position: absolute;
+	right:0;
+	top:175px;
+}
+.arrow-prev{
+	background-repeat: :no-repeat;
+	background-image: url(../images/prev.png)
+	width:100px;
+	height:50px;
+	position: absolute;
+	left:0;
+	top:175px;
+}
+.arrow-prev:hover,
+.arrow-next:hover{
+	background-color:rgba(0,146,92,0.2);
+}
+a.selected{
+
+}
+.slideshow-images{
+	width:1750px;
+	height:350px;
+}
+.slideshow-images img{
+	margin:-2px;
+	padding:0;
+	display: inline-block;
+}
