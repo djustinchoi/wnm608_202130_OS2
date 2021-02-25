@@ -1,0 +1,178 @@
+/* CSS RESETS */
+
+*, *::before, *::after {
+   box-sizing:border-box;
+}
+
+:root {
+   --color-neutral-light:#FFFFFF;
+   --color-neutral-medium:#E2E2E2;
+   --color-neutral-dark:#595959;
+
+   --color-white:#fff;
+   --color-black:#111;
+
+
+   --header-height:0.5rem;
+
+
+   --font-family: "open sans", sans-serif;
+}
+
+body {
+   margin:0;
+   font-size:100%;
+   /*font-family:var(--font-sans);*/
+   font-family: open sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   /*font-family:var(--font-serif);*/
+   font-family: open sans;
+}
+
+a {
+   color:inherit;
+   font-weight:bold;
+   text-decoration:none;
+}
+a:hover {
+   color: var(--color-neutral-dark);
+}
+h1{ 
+   text-align: center 
+   }
+h3{
+    padding-top:1em;
+   }
+h4{ 
+   text-align: center 
+   }
+
+
+/* LAYOUT CLASSES */
+.container {
+   /*max-width:1000px;*/
+   max-width: 80%;
+   /*height: 110px;*/
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
+.hidden { display:none; }
+
+
+.display-flex { display:flex; }
+.display-block { display:block; }
+.display-inline-flex { display:inline-flex; }
+.display-inline-block { display:inline-block; }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+.flex-space-around {justify-content: space-around;}
+
+
+
+
+
+/* COMPONENT CLASSES */
+
+.navbar {
+   /*background-color:var(--color-neutral-dark);*/
+   background-color: #000000;
+   color:var(--color-white);
+   line-height:var(--header-height);
+}
+.navbar h1 {
+   /*font-family:var(--font-sans);*/
+   font-family: open sans;
+   /*font-size:1em;*/
+   font-size: 1.5em;
+   margin:0;
+}
+.navbar h3 {
+   /*font-family:var(--font-sans);*/
+   font-family: open sans;
+   /*font-size:1em;*/
+   font-size: 1em;
+   margin:0;
+}
+
+.nav ul,
+.navbar ul {
+   list-style-type:none;
+   margin:0;
+   padding-left:0;
+}
+
+.navbar a {
+   display:block;
+   padding:0 0.5em;
+}
+
+.navHeight {
+   height: 110px;
+}
+
+
+/* VIEW WINDOW */
+
+.view-window {
+   position:relative;
+   overflow:hidden;
+
+   background-size:cover;
+   background-position:center;
+   background-attachment:fixed;
+
+   height:70vh;
+}
+
+
+
+
+
+
+/* CARD */
+
+.card {
+   background-color:var(--color-neutral-light);
+   padding:1em;
+
+   margin-bottom:1em;
+   margin-top:1em;
+
+   position:relative;
+   overflow:hidden;
+}
+   .card.soft {
+
+      background-color:var(--color-neutral-medium)
+      border-radius:0.5em;
+      /*box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);*/
+   }
+   .card.hard {
+      border-radius:0.2em;
+      border:1px solid var(--color-neutral-dark);
+   }
+   .card.dark {
+      /*background-color:var(--color-neutral-dark);*/
+      /*color:var(--color-white);*/
+      background-color: transparent;
+   }
+   .card.medium {
+      background-color:var(--color-neutral-medium);
+   }
+
+   .card.flat {
+      padding:0;
+   }

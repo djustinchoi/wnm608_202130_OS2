@@ -1,0 +1,55 @@
+:root {
+   --color-neutral-light:#FFFFFF;
+   --color-neutral-medium:#E2E2E2;
+   --color-neutral-dark:#595959;
+}
+
+
+body {
+   background-color:#FFFFFF;
+}
+
+.button {
+	background-color: var( --color-neutral-medium);
+	border-color: var(--color-neutral-medium);
+	color: var( --color-black);
+	font-weight: lighter;
+	padding: 10px 25px;
+	text-decoration: none;
+	font-size: 0.9em;
+	margin: 0.5em;
+	margin-bottom: 2em;
+	border-radius: 4px;
+	
+}
+.button:hover {
+	background-color: var(--color-neutral-medium);
+	color: var(--color-neutral-dark);
+}
+
+.product{
+	
+    overflow:hidden;
+    background-size: cover;
+    background-position:center;
+    background-attachment:scroll;
+    background-repeat: none;
+}
+
+.card.top {
+   width: 50vw;
+   height: 25vh;
+}
+
+.containerbutton {
+   max-width:1200px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 1em;
+}
+.containerwide {
+   max-width:1400px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 4em;
+}
