@@ -9,6 +9,8 @@
 - http://justinchoiwebdesign.com
 - http://justinchoiwebdesign.com/aau/wnm608/choi.justin
 - http://justinchoiwebdesign.com/aau/wnm608/choi.justin/recipes/index.html
+- http://justinchoiwebdesign.com/aau/wnm608/choi.justin/product/index.html
+
 
 
 ### Git Commands
