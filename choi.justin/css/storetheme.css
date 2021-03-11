@@ -1,0 +1,69 @@
+:root {
+   --color-neutral-light:#E8E8E8;
+   --color-neutral-medium:#D6D6D6;
+   --color-neutral-dark:#F0E7E0;
+}
+
+
+body {
+   background-color:#FFFFFF;
+}
+
+.button {
+	background-color: var( --color-neutral-medium);
+	border-color: var(--color-neutral-medium);
+	color: var( --color-black);
+	font-weight: lighter;
+  padding: 1em 3em;
+	text-decoration: none;
+	font-size: 0.9em;
+	margin: 0.5em;
+	margin-bottom: 2em;
+  border-radius: 0.3em;
+	
+}
+.button:hover {
+	background-color: var(--color-neutral-medium);
+	color: var(--color-neutral-dark);
+}
+
+.product{
+	
+    overflow:hidden;
+    background-size: cover;
+    background-position:center;
+    background-attachment:scroll;
+    background-repeat: none;
+}
+
+.button2 {
+  background-color: var(--color-neutral-light);
+  display: block;
+  border: 0.1em solid #d6d6d6;
+  border-radius: 0.3em;
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 1em 4em;
+  margin: 0.5em;
+  margin-bottom: 2em;
+
+
+
+
+.card.top {
+   width: 50vw;
+   height: 25vh;
+}
+
+.containerbutton {
+   max-width:1200px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 1em;
+}
+.containerwide {
+   max-width:1400px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 4em;
+}

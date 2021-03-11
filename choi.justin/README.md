@@ -1,7 +1,7 @@
-#Justin Choi
+# Justin Choi
 
 
-##Store Website
+## Store Website
 
 
 ### Important Links
