@@ -1,7 +1,7 @@
 :root {
    --color-neutral-light:#E8E8E8;
    --color-neutral-medium:#D6D6D6;
-   --color-neutral-dark:#F0E7E0;
+   --color-main:#F0E7E0;
 }
 
 
@@ -28,7 +28,7 @@ body {
 }
 
 .product{
-	
+
     overflow:hidden;
     background-size: cover;
     background-position:center;
