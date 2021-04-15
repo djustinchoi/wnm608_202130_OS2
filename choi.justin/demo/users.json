@@ -1,0 +1,34 @@
+[
+   {
+   	 "fullname":"Hamilton Cline",
+      "firtsname":"Hamilton",
+      "lastname":"Cline",
+      "type":"Teacher",
+      "email":"hcline@academyart.edu",
+      "classes":[608,617,820]
+   },
+   {
+   	  "fullname":"Vivienne Youn",
+      "firtsname":"Vivienne",
+      "lastname":"Youn",
+      "type":"Student",
+      "email":"vivienneyounvv@gmail.com",
+      "classes":[622,606,608]
+   },
+   {
+      "fullname":"Lucille Huang",
+      "firtsname":"Lucille",
+      "lastname":"Huang",
+      "type":"Customers",
+      "email":"yhuang38@art.edu",
+      "classes":[608,617,820]
+   },
+   {
+      "fullname":"Yun Yao",
+      "firtsname":"Yun",
+      "lastname":"Yao",
+      "type": "Student",
+      "email": "yaoyun0831@gmail.com",
+      "classes":[608]
+   }
+]
