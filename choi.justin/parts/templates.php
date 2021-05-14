@@ -2,16 +2,16 @@
 
 function makeProductList($r,$o) {
 return $r.<<<HTML
-<div class="col-xm-12 col-sm-6 col-md-3">
+<div class="col-xs-12 col-sm-6 col-md-4">
    <a href="product_item.php?id=$o->id" class="product">
-      <div class="product card bottom soft" style="background-image:url($o->image)">
-         
-      </div></a>
-         
-         <h5>$o->name</h5>
-          <h6>$o->description</h6>
-           <h5>&dollar;$o->price</h5>
-          
+      <div class="product-image">
+         <img src="$o->thumbnail" alt="">
+      </div>
+      <figcaption class="product-caption">
+         <div class="product-price">&dollar;$o->price</div>
+         <div class="product-title">$o->name</div>
+      </figcaption>
+   </a>
 </div>
 HTML;
 }
@@ -34,7 +34,7 @@ return $r.<<<HTML
 <div class="container">
  <div class="grid grid-justify-around">
  <div class="col-sm-12 col-md-3">
-  <div class="product card samll soft" style="background-image:url($o->image)"></div>
+  <div class="product card samll soft" style="background-image:url($o->url)"></div>
   </div>
  
    <div class="col-sm-12 col-md-5">
@@ -86,8 +86,6 @@ HTML;
 
 
 
-
-
 function cartTotals() {
 $cart = getCartItems();
 
@@ -109,7 +107,7 @@ return <<<HTML
       <strong>Taxes</strong>
    </div>
    <div class="flex-none">&dollar;$tax</div>
-</div>
+</div><hr>
 <div class="card-section display-flex">
    <div class="flex-stretch">
       <strong>Total</strong>

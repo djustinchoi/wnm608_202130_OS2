@@ -1,16 +1,16 @@
-  
 <?php
+
 session_start();
 
 function pretty_dump($data) {
    echo "<pre>",var_dump($data),"</pre>";
 }
 
+
 function file_get_json($filename) {
    $data_string = file_get_contents($filename);
    return json_decode($data_string);
 }
-
 
 /* DATABASE CONNECTION */
 function MYSQLIConn() {
@@ -43,8 +43,10 @@ function MYSQLIQuery($sql) {
 
    return $a;
 }
-/* CART */
 
+
+
+// CART FUNCTIONS
 function array_find($array,$fn) {
    foreach($array as $o) if($fn($o)) return $o;
    return false;
@@ -110,4 +112,9 @@ function makeCartBadge() {
    $cart = getCart();
    return count($cart)==0 ? "" :
       array_reduce($cart,function($r,$o){return $r+$o->amount;},0);
+}
+
+
+function setDefault($k,$v){
+   if(!isset($_GET[$k])) $_GET[$k] = $v;
 }

@@ -28,7 +28,7 @@ $cart_product = cartItemById($product->id);
             echo "You dun goofed";
          } else {
             ?>
-            <h2><?= $cart_product->amount ?> <?= $product->title ?> In Your Cart</h2>
+            <h2><?= $cart_product->amount ?> <?= $product->name ?> In Your Cart</h2>
 
             <div class="display-flex">
                <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>

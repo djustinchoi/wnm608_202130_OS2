@@ -1,18 +1,16 @@
 <?php
-
 include "lib/php/functions.php";
+include "data/api.php";
 
-$product = MYSQLIQuery("
-   SELECT *
-   FROM `products`
-   WHERE `id` = {$_GET['id']}
-")[0];
+$product = makeStatement("product_by_id")[0];
 
-$thumbs = explode(",", $product->image);
+$thumbs = explode(",", $product->url);
 
 $thumb_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/images/$o'>";
+   return $r."<img src='$o'>";
 });
+
+// echo $_SESSION['num'];
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -30,7 +28,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
          <div class="col-xs-12 col-md-7">
             <div class="card soft">
                <div class="image-main">
-                  <img src="/images/store/<?= $product->image_thumb ?>" />
+                  <img src="<?= $product->url ?>">
                </div>
                <div class="image-thumbs"><?= $thumb_elements ?></div>
             </div>
@@ -39,7 +37,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
             <form class="card soft flat" action="product_actions.php?crud=add-to-cart" method="post">
                <input type="hidden" name="id" value="<?= $product->id ?>">
                <div class="card-section">
-                  <div class="product-title"><?= $product->title ?></div>
+                  <div class="product-title"><?= $product->name ?></div>
                   <div class="product-price">&dollar;<?= $product->price ?></div>
                </div>
                <div class="card-section">
@@ -64,11 +62,47 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                   <button type="submit" class="form-button sell">Add To Cart</button>
                </div>
             </form>
-            <div class="card soft">
-               <?= $product->description ?>
-            </div>
-         </div>
+           </form>
       </div>
    </div>
+</div>
+
+<div class="container display-flex flex-justify-center hide">
+    <h2>You May Also Like</h2>
+   </div>
+
+   <div class="containerwide grid-justify-around">
+      <div class="grid">
+     <!--  <div class="col-md-1"></div> -->
+      <div class="col-sm-6 col-md-3">
+        <div id="product6" class="product card bottom soft" style="background-image:url(img/product4.jpg)"></div>
+        <h5>product</h5>
+        <h5>$ 10.00</h5>
+         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+      </div>
+   
+      <div class="col-sm-6 col-md-3">
+        <div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product1.jpg)"></div>
+        <h5>product</h5>
+        <h5>$ 10.00</h5>
+         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+     </div>
+     <div class="col-sm-6 col-md-3">
+        <div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product2.jpg)"></div>
+        <h5>product</h5>
+        <h5>$ 10.00</h5>
+        <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+     </div>
+     <div class="col-sm-6 col-md-3">
+        <div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product3.jpg)"></div>
+        <h5>product</h5>
+        <h5>$ 10.00</h5>
+       <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
+     </div>
+    
+      </div>
+   </div>
+  </div>
+
 </body>
 </html>
