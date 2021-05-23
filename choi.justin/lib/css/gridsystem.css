@@ -9,7 +9,7 @@
 }
 
 .grid.gap {
-   --grid-gap:1em; /* Default grid gap */
+   --grid-gap:2em; /* Default grid gap */
    grid-gap:var(--grid-gap);
    gap:var(--grid-gap); /* grid-gap and gap are same, but put both becaus of all browser */
 }

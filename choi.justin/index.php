@@ -71,6 +71,36 @@ include "lib/php/functions.php";
      </div>
 
 </body>
+
+   <h2> OUR FAVORITES</h2>
+   <div class="container" id="typography">
+         <div class="card soft">
+         <div class="grid gap">
+                  
+                  <div class="col-xs-12 col-sm-3">
+                     <img src="https://i.pinimg.com/564x/54/59/12/54591277d342ce95b3a4e756e2662f51.jpg" class="media-image" alt="">
+                     <p class="typography">White Rubik's Cube</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                     <img src="https://i.pinimg.com/564x/fd/06/c1/fd06c157507c54c6efaff386478e3047.jpg" class="media-image" alt="">
+                     <p class="typography">White Calculator</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                     <img src="https://i.pinimg.com/564x/9a/d9/73/9ad973032f0ce7be26cca0dfcf99e4d4.jpg" class="media-image" alt="">
+                    <p class="typography">White Macintosh</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                     <img src="https://cdn.shopify.com/s/files/1/0265/3475/products/Miller_Andrew_Polaroid_1000_4a5a5ca6-4eed-4cb3-bcb0-769c817e2132_900x.jpeg?v=1475254640" class="media-image" alt="">
+                     <p class="typography">White Polaroid</p>
+                  </div>
+               </div>
+               <div class="containerwide display-flex flex-space-around" style="margin-top: 1em">
+                  <a href="#" class="button">Add</a>
+                  <a href="#" class="button">Add</a>
+                  <a href="#" class="button">Add</a>
+                  <a href="#" class="button">Add</a>
+            </div>
+         </div>
 <footer>
 	<div class="footer-left">
 

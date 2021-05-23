@@ -30,7 +30,6 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
                <div class="image-main">
                   <img src="<?= $product->url ?>">
                </div>
-               <div class="image-thumbs"><?= $thumb_elements ?></div>
             </div>
          </div>
          <div class="col-xs-12 col-md-5">

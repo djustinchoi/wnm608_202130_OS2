@@ -2,6 +2,7 @@
 
 include "lib/php/functions.php";
 include "parts/templates.php";
+include "data/api.php";
 
 //resetCart();
 //pretty_dump(getCart());
@@ -49,5 +50,37 @@ $cart = getCartItems();
          </div>
       </div>
    </div>
+
+     <div class="container display-flex flex-justify-center hide">
+    <h2>You May Also Like</h2>
+   </div>
+
+   <div class="containerwide grid-justify-around">
+      <div class="grid">
+    
+   
+   <? 
+
+   $products = MYSQLIQuery("
+      SELECT *
+      FROM `products`
+      WHERE `category` = 'Product'
+      LIMIT 4
+   ");
+
+   // pretty_dump($recommended);
+   echo array_reduce($products,'makeProductList');
+
+   ?>
+
+   </div>
+  </div>
+   
+    
+   </div>
+  </div>
+
+  <?php include "parts/footer.php" ?>
+
 </body>
 </html>
