@@ -1,7 +1,7 @@
 <header class="navbar">
    <div class="container display-flex flex-align-center">
       <div class="flex-none">
-         <h1>MINIMAL WHITE</h1>
+          <img class="nav-image" src="img/tab.png" alt="logo">
       </div>
       <div class="flex-stretch"></div>
       <nav class="flex-none nav flex">
