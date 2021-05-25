@@ -1,7 +1,10 @@
 <header class="navbar">
    <div class="container display-flex flex-align-center">
       <div class="flex-none">
-          <img class="nav-image" src="img/tab.png" alt="logo">
+         <ul>
+          <li><img class="nav-image" src="img/tab.png" alt="logo" a href="index.php"></li>
+       </ul>
+
       </div>
       <div class="flex-stretch"></div>
       <nav class="flex-none nav flex">

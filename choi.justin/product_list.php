@@ -64,10 +64,10 @@ $_SESSION['num'] = 0;
 <body>
    <?php include "parts/navbar.php" ?>
 
-   <div class="container">
+
       <h2>Product List</h2>
 
-      <div class="grid gap product-list">
+      <div class="grid gap bgbox" id="image">
  
       <?php
 

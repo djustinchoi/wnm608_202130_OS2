@@ -35,37 +35,72 @@ include "lib/php/functions.php";
    </div>
 
 
+   <div class="grid gap bgbox2 card soft" id="typography">
 
+                   <div class="col-xs-12 col-md-3">
+                     <img src="img/home1.jpg" class="media-image" alt="">
+                     <p class="typography">Simplifying your life isn’t about your possessions — it’s about value</p>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                     <img src="img/home2.jpg" class="media-image" alt="">
+                     <p class="typography">Minimalism is not about what you own</p>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                     <img src="img/home3.jpg" class="media-image" alt="">
+                    <p class="typography">Being minimal isn’t simple</p>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                     <img src="img/home4.jpg" class="media-image" alt="">
+                    <p class="typography">Minimalism is a tool that can assist you in finding freedom</p>
+                  </div>
 
-      <h2> OUR FAVORITES</h2>
-   <div class="container card soft grid gap" id="typography">
-
-                  
-                  <div class="col-xs-12 col-sm-3">
-                     <img src="https://i.pinimg.com/564x/54/59/12/54591277d342ce95b3a4e756e2662f51.jpg" class="media-image" alt="">
-                     <p class="typography">White Rubik's Cube</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-3">
-                     <img src="https://i.pinimg.com/564x/fd/06/c1/fd06c157507c54c6efaff386478e3047.jpg" class="media-image" alt="">
-                     <p class="typography">White Calculator</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-3">
-                     <img src="https://i.pinimg.com/564x/9a/d9/73/9ad973032f0ce7be26cca0dfcf99e4d4.jpg" class="media-image" alt="">
-                    <p class="typography">White Macintosh</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-3">
-                     <img src="https://cdn.shopify.com/s/files/1/0265/3475/products/Miller_Andrew_Polaroid_1000_4a5a5ca6-4eed-4cb3-bcb0-769c817e2132_900x.jpeg?v=1475254640" class="media-image" alt="">
-                     <p class="typography">White Polaroid</p>
-                  </div>
                </div>
-   				<div class="containerwide display-flex flex-space-around" style="margin-top: 1em">
-
-   	  				<a href="#" class="button">Add</a>
-      				<a href="#" class="button">Add</a>
-      				<a href="#" class="button">Add</a>
-            </div>
+               <div class="containerwide display-flex flex-space-around" style="margin-top: 1em">
          </div>
 
+     <h2> OUR FAVORITES</h2>
+
+   <div class="grid gap bgbox container card soft styleguide" id="product">
+
+         <div class="col-xs-12 col-sm-4">
+               <a href="product_item.php?id=1" class="image-thumbnail w-inline-block product">
+                  <img src="img/product1.jpg" class="media-image" alt="">
+                     <div class="thumbnail-wrapper">
+                        <div class="mouseover">
+                        <h2 class="article-name-thumbnail"> White Rubik's Cube</h2>
+                        <p class="paragraph-small white"> Simple White rubick's cube hard painted</p>
+                        </div>
+                     </div>
+               </a> 
+         </div>
+
+         <div class="col-xs-12 col-sm-4">
+               <a href="product_item.php?id=2" class="image-thumbnail w-inline-block product">
+                  <img src="img/product2.jpg" class="media-image" alt="">
+                     <div class="thumbnail-wrapper">
+                        <div class="mouseover">
+                        <h2 class="article-name-thumbnail"> White Rubik's Cube</h2>
+                        <p class="paragraph-small white"> Simple White rubick's cube hard painted</p>
+                        </div>
+                     </div>
+               </a> 
+         </div>
+
+         <div class="col-xs-12 col-sm-4">
+               <a href="product_item.php?id=3" class="image-thumbnail w-inline-block product">
+                  <img src="img/product3.jpg" class="media-image" alt="">
+                     <div class="thumbnail-wrapper">
+                        <div class="mouseover">
+                        <h2 class="article-name-thumbnail"> White Rubik's Cube</h2>
+                        <p class="paragraph-small white"> Simple White rubick's cube hard painted</p>
+                        </div>
+                     </div>
+               </a> 
+         </div>
+      </div>
+                  
+         <div class="containerwide display-flex flex-space-around" style="margin-top: 1em">
+         </div>
       	<h2> OUR ARTIST</h2>
    		<div class="container" id="typography">
          <div class="card soft">

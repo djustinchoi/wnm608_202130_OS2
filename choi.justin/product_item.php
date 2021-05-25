@@ -25,22 +25,24 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 
    <div class="container">
       <div class="grid gap product-display">
-         <div class="col-xs-12 col-md-7">
+         <div class="col-xs-12 col-md-6">
             <div class="card soft">
                <div class="image-main">
                   <img src="<?= $product->url ?>">
                </div>
             </div>
          </div>
-         <div class="col-xs-12 col-md-5">
+         <div class="col-xs-12 col-md-6">
             <form class="card soft flat" action="product_actions.php?crud=add-to-cart" method="post">
                <input type="hidden" name="id" value="<?= $product->id ?>">
                <div class="card-section">
                   <div class="product-title"><?= $product->name ?></div>
                   <div class="product-price">&dollar;<?= $product->price ?></div>
+                  <div class="product-text"><?= $product->description ?></div>
+
                </div>
                <div class="card-section">
-                  <label class="form-label">Amount</label>
+                  <label class="form-label">Quantity</label>
                   <div class="form-select">
                      <select name="amount">
                         <!-- option[value='$']*10>{$} -->
