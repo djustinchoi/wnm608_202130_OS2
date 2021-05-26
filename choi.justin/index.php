@@ -26,8 +26,8 @@ include "lib/php/functions.php";
 
          <div class="col-xs-12 col-md-4" style="margin-top:1em">
            
-            <button class="button3" href="#">Subscribe</button>
-            <button class="button4" href="product_list.php">Shop</button>
+
+            <a class="button4" href="product_list.php">Shop</a>
 
          </div>
          </nav>
@@ -37,107 +37,26 @@ include "lib/php/functions.php";
 
    <div class="grid gap bgbox2 card soft" id="typography">
 
-                   <div class="col-xs-12 col-md-3">
-                     <img src="img/home1.jpg" class="media-image" alt="">
-                     <p class="typography">Simplifying your life isn’t about your possessions — it’s about value</p>
+                   <div class="col-xs-12 col-md-6">
+                     <img src="img/main3.jpg" class="media-image" alt="">
                   </div>
-                  <div class="col-xs-12 col-md-3">
-                     <img src="img/home2.jpg" class="media-image" alt="">
-                     <p class="typography">Minimalism is not about what you own</p>
+                  <div class="col-xs-12 col-md-6">
+                     <img src="img/main4.jpg" class="media-image" alt="">
                   </div>
-                  <div class="col-xs-12 col-md-3">
-                     <img src="img/home3.jpg" class="media-image" alt="">
-                    <p class="typography">Being minimal isn’t simple</p>
-                  </div>
-                  <div class="col-xs-12 col-md-3">
-                     <img src="img/home4.jpg" class="media-image" alt="">
-                    <p class="typography">Minimalism is a tool that can assist you in finding freedom</p>
-                  </div>
-
                </div>
                <div class="containerwide display-flex flex-space-around" style="margin-top: 1em">
          </div>
 
-     <h2> OUR FAVORITES</h2>
-
-   <div class="grid gap bgbox container card soft styleguide" id="product">
-
-         <div class="col-xs-12 col-sm-4">
-               <a href="product_item.php?id=1" class="image-thumbnail w-inline-block product">
-                  <img src="img/product1.jpg" class="media-image" alt="">
-                     <div class="thumbnail-wrapper">
-                        <div class="mouseover">
-                        <h2 class="article-name-thumbnail"> White Rubik's Cube</h2>
-                        <p class="paragraph-small white"> Simple White rubick's cube hard painted</p>
-                        </div>
-                     </div>
-               </a> 
-         </div>
-
-         <div class="col-xs-12 col-sm-4">
-               <a href="product_item.php?id=2" class="image-thumbnail w-inline-block product">
-                  <img src="img/product2.jpg" class="media-image" alt="">
-                     <div class="thumbnail-wrapper">
-                        <div class="mouseover">
-                        <h2 class="article-name-thumbnail"> White Rubik's Cube</h2>
-                        <p class="paragraph-small white"> Simple White rubick's cube hard painted</p>
-                        </div>
-                     </div>
-               </a> 
-         </div>
-
-         <div class="col-xs-12 col-sm-4">
-               <a href="product_item.php?id=3" class="image-thumbnail w-inline-block product">
-                  <img src="img/product3.jpg" class="media-image" alt="">
-                     <div class="thumbnail-wrapper">
-                        <div class="mouseover">
-                        <h2 class="article-name-thumbnail"> White Rubik's Cube</h2>
-                        <p class="paragraph-small white"> Simple White rubick's cube hard painted</p>
-                        </div>
-                     </div>
-               </a> 
-         </div>
-      </div>
+  
                   
          <div class="containerwide display-flex flex-space-around" style="margin-top: 1em">
          </div>
-      	<h2> OUR ARTIST</h2>
-   		<div class="container" id="typography">
-         <div class="card soft">
-         <div class="grid gap">
-                  
-                  <div class="col-xs-12 col-sm-6">
-                     <img src="https://cdn.shopify.com/s/files/1/0265/3475/collections/Miller_Andrew_portrait_360x360_crop_center.jpg?v=1379972873" width="350" height="430"class="media-image" alt="">
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                     <h5>ANDREW MILLER</h5>
-                     <p class="typography">Andrew Miller is a brand strategist and photographer based in New York City. He is best known for his Brand Spirit series—100 photographs of iconic objects, painted white to remove all visual branding. The images are telegraphic, instantly recognizable even when their environmental context has been removed. Andrew's work has been featured in Communication Arts, Fast Company Design, swissmiss, PSFK, Huffington Post, Adweek, and on the Tumblr Storyboard. Upon completing a Master's in Branding at the School of Visual Arts, he received the prestigious Paula Rhodes Award for Exceptional Achievement. </p>
-                  </div>
-         </div>
-     </div>
-  </div>
+      	
+<?php include "parts/likeshop.php" ?>
 
-</body>
 
-<footer>
-	<div class="footer-left">
-
-				<h3>MINIMAL WHITE</span></h3>
-
-				<p class="footer-links">
-					<a href="#">copyright</a>
-					|
-					<a href="#">sitemap</a>
-					|
-					<a href="#">privacy policy</a>
-					|
-					<a href="#">contact</a>
-				</p>
-
-				<p class="footer-company-name">© 2021 MINIMAL WHITE</p>
-	</div>
-</footer>
-
+<?php include "parts/sub.php" ?>
+<?php include "parts/footer.php" ?>
 
 
 </body>

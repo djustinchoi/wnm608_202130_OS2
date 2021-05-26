@@ -68,42 +68,8 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
    </div>
 </div>
 
-<div class="container display-flex flex-justify-center hide">
-    <h2>You May Also Like</h2>
-   </div>
-
-   <div class="containerwide grid-justify-around">
-      <div class="grid">
-     <!--  <div class="col-md-1"></div> -->
-      <div class="col-sm-6 col-md-3">
-        <div id="product6" class="product card bottom soft" style="background-image:url(img/product4.jpg)"></div>
-        <h5>product</h5>
-        <h5>$ 10.00</h5>
-         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
-      </div>
-   
-      <div class="col-sm-6 col-md-3">
-        <div id="product7" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product1.jpg)"></div>
-        <h5>product</h5>
-        <h5>$ 10.00</h5>
-         <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
-     </div>
-     <div class="col-sm-6 col-md-3">
-        <div id="product8" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product2.jpg)"></div>
-        <h5>product</h5>
-        <h5>$ 10.00</h5>
-        <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
-     </div>
-     <div class="col-sm-6 col-md-3">
-        <div id="product9" class="product card bottom soft col-sm-6 col-md-3" style="background-image:url(img/product3.jpg)"></div>
-        <h5>product</h5>
-        <h5>$ 10.00</h5>
-       <div class="center"><a href="product_list.php" class="button col-sm-6 col-md-3">VIEW MORE</a></div>
-     </div>
-    
-      </div>
-   </div>
-  </div>
+<?php include "parts/like.php" ?>
+<?php include "parts/footer.php" ?>
 
 </body>
 </html>

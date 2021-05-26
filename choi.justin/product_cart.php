@@ -18,7 +18,11 @@ $cart = getCartItems();
 </head>
 <body>
    <?php include "parts/navbar.php" ?>
-   
+     <div class="bgbox">
+<div class="product-text">
+         <h2> Cart</h2>
+         <div class="product-text2">Minimal is about value</div>
+    </div>
 
    <div class="container">
       <div class="grid gap">
@@ -38,7 +42,7 @@ $cart = getCartItems();
             </div>
          </div>
          <div class="col-xs-12 col-md-4">
-            <div class="card soft flat">
+            <div class="card-flat">
                <div class="card-section">
                   <h2>Confirm Cart</h2>
                </div>
@@ -51,36 +55,13 @@ $cart = getCartItems();
       </div>
    </div>
 
-     <div class="container display-flex flex-justify-center hide">
-    <h2>You May Also Like</h2>
-   </div>
 
-   <div class="containerwide grid-justify-around">
-      <div class="grid">
-    
+   <?php include "parts/like.php" ?>
    
-   <? 
+</div>
+</div>
 
-   $products = MYSQLIQuery("
-      SELECT *
-      FROM `products`
-      WHERE `category` = 'Product'
-      LIMIT 4
-   ");
-
-   // pretty_dump($recommended);
-   echo array_reduce($products,'makeProductList');
-
-   ?>
-
-   </div>
-  </div>
-   
-    
-   </div>
-  </div>
-
-  <?php include "parts/footer.php" ?>
+<?php include "parts/footer.php" ?>
 
 </body>
 </html>

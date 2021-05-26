@@ -21,19 +21,23 @@ $cart_product = cartItemById($product->id);
    
 
    <div class="container">
-      <div class="card soft">
+      <div class="card soft styleguide">
          <?php
 
          if(!isset($_GET['id'])) {
             echo "You dun goofed";
          } else {
             ?>
-            <h2><?= $cart_product->amount ?> <?= $product->name ?> In Your Cart</h2>
+            <h2><?= $cart_product->amount ?> <?= $product->name ?> is added to your cart</h2>
 
             <div class="display-flex">
-               <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
+               <div class="flex-stretch"></div>
+               <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back to product</a></div>
                <div class="flex-stretch"></div>
                <div class="flex-none"><a class="form-button" href="product_list.php">Continue Shopping</a></div>
+               <div class="flex-stretch"></div>
+               <div class="flex-none"><a class="form-button" href="product_cart.php">Checkout</a></div>
+               <div class="flex-stretch"></div>
             </div>
             <?
          }

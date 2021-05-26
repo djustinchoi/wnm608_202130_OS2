@@ -15,47 +15,21 @@ include "parts/templates.php";
 
    <div class="container">
 
-         <h2>Thank you for your purchase!</h2>
-          <div class="center">
-           <div class="foodertext">An comfirmation email has been sent to your email. Subscribe and get news and promotion code for your next purchase!</div>
-           </div>
-          <div class="grid gap">
-             <div class="col-xs-12 col-md-3"></div>
-
-            <div class="col-xs-12 col-md-5">
-             <div class="form-control">
-            <input id="example3" type="text" placeholder="Email" class="form-input">
-            </div>
-         </div>
-
-            <div class="col-xs-12 col-md-4" style="margin-top:1em">
-           
-            <a class="button" href="#">Subscribe</a>
-         </div>
-    </div>
-  
- <h3>Suggestion based on your purchase</h3>
- <div class="grid">
-    
-   
-   <? 
-
-   $products = MYSQLIQuery("
-      SELECT *
-      FROM `products`
-      WHERE `category` = 'Product'
-      LIMIT 4
-   ");
-
-   // pretty_dump($recommended);
-   echo array_reduce($products,'makeProductList');
-
-   ?>
-
+         <h2>ORDER PLACED, THANKS!</h2>
+          
+           <div class="type-center">Comfirmation will be sent to your email</div>
+           <div class="type-center">Shipping to William Smith, xxx Arguello Blvd</div>
+           <div class="type-center">Estimated delivery - Tomorrow May 28</div>
+          
+          <div class="display-flex">
+          <div class="flex-stretch"></div>
+               <div class="flex-none"><a class="form-button" href="product_list.php">Continue Shopping</a></div>
+          <div class="flex-stretch"></div>
+        </div>
+          <div class="flex-stretch"></div>
+         <nav class="flex-none nav flex white"></nav>
    </div>
-
-   </div>
-
+<?php include "parts/suggest.php" ?>
  <?php include "parts/footer.php" ?>
 </body>
 </html>
