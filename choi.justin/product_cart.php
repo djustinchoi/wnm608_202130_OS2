@@ -25,6 +25,7 @@ $cart = getCartItems();
     </div>
 
    <div class="container">
+      <hr>
       <div class="grid gap">
          <div class="col-xs-12 col-md-8">
             <div class="card soft flat">

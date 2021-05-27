@@ -22,28 +22,28 @@ function makeSortOptions() {
       ["price","DESC","Highest Price"],
       ["price","ASC","Lowest Price"]
    ];
-   foreach($options as [$orderby,$direction,$title]) {
+   foreach($options as [$orderby,$direction,$name]) {
       echo "
       <option data-orderby='$orderby' data-direction='$direction'
       ".($_GET['o']==$orderby && $_GET['d']==$direction ? "selected" : "").">
-      $title</option>
+      $name</option>
       ";
    }
 }
 
 
 
-function makeFilterSet() {
-   $options = [
-      "Product",
+// function makeFilterSet() {
+//    $options = [
+//       "Product",
 
-   ];
-   foreach($options as $option) {
-      echo "
-      <a href='product_list.php?t=products_by_category&category=$option&d={$_GET['d']}&o={$_GET['o']}&l={$_GET['l']}&s={$_GET['s']}' class='form-button inline ".($option==$_GET['category']?"active":"")."'>$option</a>
-      ";
-   }
-}
+//    ];
+//    foreach($options as $option) {
+//       echo "
+//       <a href='product_list.php?t=products_by_category&category=$option&d={$_GET['d']}&o={$_GET['o']}&l={$_GET['l']}&s={$_GET['s']}' class='form-button inline ".($option==$_GET['category']?"active":"")."'>$option</a>
+//       ";
+//    }
+// }
 
 
 if(isset($_GET['t'])) {
@@ -71,7 +71,7 @@ $_SESSION['num'] = 0;
   </div>
 
 
-      <h2>Product List</h2>
+      <h2>OUR PRODUCTS</h2>
 
 
 <div class="containerwide grid-justify-around" style="margin-top: 0">
@@ -118,15 +118,12 @@ $_SESSION['num'] = 0;
  
       <?php
 
-      $products = MYSQLIQuery("
-         SELECT *
-         FROM `products`
-         ORDER BY `date_create` DESC
-         LIMIT 12
-      ");
+      if(empty($products)) {
+         echo "No products found.";
+      } else {
+         echo array_reduce($products,'makeProductList');
+      }
 
-      echo array_reduce($products,'makeProductList');
-      
       ?>
    
     

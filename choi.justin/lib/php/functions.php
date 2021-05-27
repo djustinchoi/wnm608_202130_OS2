@@ -14,7 +14,10 @@ function file_get_json($filename) {
 
 /* DATABASE CONNECTION */
 function MYSQLIConn() {
-   include_once "data/auth.php";
+   @include_once "data/auth.php";
+   if (!function_exists('MYSQLIAuth')) {
+      @include_once "../data/auth.php";
+   }
 
    @$conn = new mysqli(...MYSQLIAuth());
 
