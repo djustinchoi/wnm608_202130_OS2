@@ -291,6 +291,13 @@ img {
     margin-right: auto;
     margin: 0;
 }
+.icon {
+   display: block;
+   width:5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+}
 .image-main{
     display: block;
    width:100%;
