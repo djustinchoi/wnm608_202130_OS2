@@ -19,7 +19,7 @@ $empty_object = (object) [
    "image"=>"img/product13.jpg",
    "description"=>"White timbre table bell. Museum quality: archival inks, 100% cotton rag paper unless noted",
    "quantity"=>"50",
-   "id"=>"13"
+
 ];
 
 
@@ -131,12 +131,12 @@ echo <<<HTML
          <input class="form-input" type="text" id="product-category" name="product-category" value="$product->category">
       </div>
       <div class="form-control">
-         <label class="form-label" for="product-description">Description</label>
-         <textarea class="form-input" id="product-description" name="product-description" style="margin: 0px; width: 758px; height: 60px;">$product->description</textarea>
-      </div>
-      <div class="form-control">
          <label class="form-label" for="product-image">Image</label>
          <input class="form-input"type="text" id="product-image" name="product-image" value="$product->image">
+      </div>
+      <div class="form-control">
+         <label class="form-label" for="product-description">Description</label>
+         <textarea class="form-input" id="product-description" name="product-description" style="margin: 0px; width: 758px; height: 60px;">$product->description</textarea>
       </div>
       <div class="form-control">
          <label class="form-label" for="product-quantity">Quantity</label>

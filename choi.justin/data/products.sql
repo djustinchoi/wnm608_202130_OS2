@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 27, 2021 at 06:03 AM
+-- Generation Time: May 27, 2021 at 02:33 PM
 -- Server version: 5.6.51-cll-lve
 -- PHP Version: 7.3.6
 
@@ -56,7 +56,8 @@ INSERT INTO `products` (`id`, `date_create`, `date_modify`, `name`, `category`, 
 (9, '2021-05-12 00:00:00', '2021-05-12 16:23:30', 'White book pile', 'Product', 'img/product9.jpg', 28.00, 'White pile of books. Museum quality: archival inks, 100% cotton rag paper unless noted', 30),
 (10, '2021-05-13 00:00:00', '2021-05-13 16:23:30', 'White phone case', 'Product', 'img/product10.jpg', 19.00, 'iphone12 case with white. Museum quality: archival inks, 100% cotton rag paper unless noted', 100),
 (11, '2021-05-13 00:00:00', '2021-05-13 16:23:30', 'White tumbler', 'Product', 'img/product11.jpg', 36.00, 'Sustainable white tumbler. Museum quality: archival inks, 100% cotton rag paper unless noted', 30),
-(12, '2021-05-13 00:00:00', '2021-05-13 16:23:30', 'White Hershey', 'Product', 'img/product12.jpg', 28.00, 'White Hershey sculpture. Museum quality: archival inks, 100% cotton rag paper unless noted', 25);
+(12, '2021-05-13 00:00:00', '2021-05-13 16:23:30', 'White Hershey', 'Product', 'img/product12.jpg', 28.00, 'White Hershey sculpture. Museum quality: archival inks, 100% cotton rag paper unless noted', 25),
+(21, '2021-05-27 14:25:39', '2021-05-27 14:25:39', 'Timbre table bell', 'Product', 'img/product13.jpg', 49.50, 'White timbre table bell. Museum quality: archival inks, 100% cotton rag paper unless noted', 50);
 
 --
 -- Indexes for dumped tables
@@ -76,7 +77,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(13) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(13) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
