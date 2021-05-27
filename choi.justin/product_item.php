@@ -4,7 +4,7 @@ include "data/api.php";
 
 $product = makeStatement("product_by_id")[0];
 
-$thumbs = explode(",", $product->url);
+$thumbs = explode(",", $product->image);
 
 $thumb_elements = array_reduce($thumbs,function($r,$o){
    return $r."<img src='$o'>";
@@ -28,7 +28,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
          <div class="col-xs-12 col-md-6">
             <div class="card soft">
                <div class="image-main">
-                  <img src="<?= $product->url ?>">
+                  <img src="<?= $product->image ?>">
                </div>
             </div>
          </div>

@@ -21,7 +21,7 @@
 				<a href="index.php"><div class="foodertext">Customer Service</div></a>
 				<a href="index.php"><div class="foodertext">Artist</div></a>
 				<a href="index.php"><div class="foodertext">Partnership</div></a>
-				<a href="index.php"><div class="foodertext">Admin</div></a>
+				<a href="admin/index.php"><div class="foodertext">Admin</div></a>
 			
             </div>
    

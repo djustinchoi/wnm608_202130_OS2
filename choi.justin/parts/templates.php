@@ -5,7 +5,7 @@ function makeProductList($r,$o) {
   <div class="col-xs-12 col-sm-6 col-md-4">
     <a href="product_item.php?id=$o->id" class="product">
       <div class="product-image">
-        <img src="$o->thumbnail" alt="">
+        <img src="$o->image" alt="">
       </div>
       <figcaption class="product-caption">
         <div class="product-price">&dollar;$o->price</div>
@@ -33,7 +33,7 @@ function makeCartList($r,$o) {
   return $r.<<<HTML
   <div class="display-flex card-section">
     <div class="display-block image-sub">
-      <img src="$o->url">
+      <img src="$o->image">
     </div>
 
     <div class="card soft">

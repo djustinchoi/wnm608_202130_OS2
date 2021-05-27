@@ -82,9 +82,10 @@ function makeStatement($type) {
                `name` = ?,
                `price` = ?,
                `category` = ?,
-               `url` = ?,
+               `image` = ?,
                `description` = ?,
                `quantity` = ?,
+               `date_create()` = NOW(),
                `date_modify` = NOW()
             WHERE `id` = ?
             ");
@@ -93,7 +94,7 @@ function makeStatement($type) {
             $_POST['product-name'],
             $_POST['product-price'],
             $_POST['product-category'],
-            $_POST['product-url'],
+            $_POST['product-image'],
             $_POST['product-description'],
             $_POST['product-quantity'],
             $_POST['id']
@@ -108,7 +109,7 @@ function makeStatement($type) {
                `name`,
                `price`,
                `category`,
-               `url`,
+               `image`,
                `description`,
                `quantity`,
                `date_create`,
@@ -130,7 +131,7 @@ function makeStatement($type) {
             $_POST['product-name'],
             $_POST['product-price'],
             $_POST['product-category'],
-            $_POST['product-url'],
+            $_POST['product-image'],
             $_POST['product-description'],
             $_POST['product-quantity']
          );

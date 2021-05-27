@@ -13,12 +13,13 @@ $products = makeStatement("products_admin_all");
 
 
 $empty_object = (object) [
-   "title"=>"Timbre table bell",
+   "name"=>"Timbre table bell",
    "price"=>"49.50",
-   "category"=>"product",
-   "url"=>"img/product13.jpg",
+   "category"=>"Product",
+   "image"=>"img/product13.jpg",
    "description"=>"White timbre table bell. Museum quality: archival inks, 100% cotton rag paper unless noted",
-   "quantity"=>"50"
+   "quantity"=>"50",
+   "id"=>"13"
 ];
 
 
@@ -45,9 +46,10 @@ switch(@$_GET['crud']) {
 function productListItem($r,$product) {
 return $r.<<<HTML
 <div class="card-section">
+<hr>
    <div class="display-flex">
       <div class="flex-none">
-        <div class="product card small soft" style="background-image:url($product->url)"></div>
+        <div class="product card small soft" style="background-image:url($product->image)"></div>
       </div>
       <div class="flex-stretch">$product->name</div>  
       <div class="flex-none">
@@ -63,7 +65,7 @@ HTML;
 function showProductPage($product) {
 
 $id = $_GET['id'];
-$thumbs = explode(",", $product->url);
+$thumbs = explode(",", $product->image);
 $thumb_elements = array_reduce($thumbs,function($r,$o){
    return $r."<img src='img/$o'>";
 });
@@ -84,7 +86,7 @@ echo <<<HTML
 </div>
 <div class="col-xs-12 col-md-12">
    <div class="card soft styleguide">
-      <h2>$product->title</h2>
+      <h2>$product->name</h2>
       <div>
          <strong>Price</strong>
          <div>&dollar;$product->price</div>
@@ -101,7 +103,7 @@ echo <<<HTML
 
          <strong>Image</strong>
          
-           <div class="product card small soft" style="background-image: url(img/product13.jpg)"></div>
+         <div class="product card small soft" style="background-image:url($product->image)"></div>
          
       </div>
       <div>
@@ -117,8 +119,8 @@ echo <<<HTML
       <h2>$addoredit Product</h2>
       <input type="hidden" name="id" value="$id">
       <div class="form-control">
-         <label class="form-label" for="product-title">Name</label>
-         <input class="form-input" type="text" id="product-title" name="product-title" value="$product->title">
+         <label class="form-label" for="product-name">Name</label>
+         <input class="form-input" type="text" id="product-name" name="product-name" value="$product->name">
       </div>
       <div class="form-control">
          <label class="form-label" for="product-price">Price</label>
@@ -130,11 +132,11 @@ echo <<<HTML
       </div>
       <div class="form-control">
          <label class="form-label" for="product-description">Description</label>
-         <textarea class="form-input" id="product-description" name="product-description">$product->description</textarea>
+         <textarea class="form-input" id="product-description" name="product-description" style="margin: 0px; width: 758px; height: 60px;">$product->description</textarea>
       </div>
       <div class="form-control">
-         <label class="form-label" for="product-url">Image</label>
-         <input class="form-input"type="text" id="product-url" name="product-url" value="$product->url">
+         <label class="form-label" for="product-image">Image</label>
+         <input class="form-input"type="text" id="product-image" name="product-image" value="$product->image">
       </div>
       <div class="form-control">
          <label class="form-label" for="product-quantity">Quantity</label>
@@ -177,7 +179,7 @@ HTML;
 
    <div class="container">
 
-         <?php
+          <?php
          if(isset($_GET['id'])) {
             // ternary, conditional
             showProductPage(

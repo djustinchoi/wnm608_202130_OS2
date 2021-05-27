@@ -7,7 +7,7 @@
 ### Important Links
 
 - http://justinchoiwebdesign.com
-- http://justinchoiwebdesign.com/aau/wnm608/choi.justin
+- http://justinchoiwebdesign.com/aau/wnm608/choi.justin/index.php
 - http://justinchoiwebdesign.com/aau/wnm608/choi.justin/styleguide
 
 ### Project Links
